@@ -1,0 +1,60 @@
+[
+    {
+        "group": "admin",
+        "permissions": [
+            {
+                "resource": "*",
+                "methods": "*",
+                "action": "allow"
+            }
+        ],
+        "access": "*"
+    },
+    {
+        "group": "moderator",
+        "permissions": [
+            {
+                "resource": "/api/i/article",
+                "methods": [
+                    "POST"
+                ],
+                "action": "allow"
+            },
+            {
+                "resource": "/api/i/article/:id",
+                "methods": [
+                    "PUT"
+                ],
+                "action": "allow"
+            },
+            {
+                "resource": "/api/i/article/:id",
+                "methods": [
+                    "GET"
+                ],
+                "action": "allow"
+            },
+            {
+                "resource": "/api/i/article/:id",
+                "methods": [
+                    "DELETE"
+                ],
+                "action": "allow"
+            }
+        ],
+        "access": "module"
+    },
+    {
+        "group": "user",
+        "permissions": [
+            {
+                "resource": "/api/i/article/:id",
+                "methods": [
+                    "GET"
+                ],
+                "action": "allow"
+            }
+        ],
+        "access": "module"
+    }
+]
