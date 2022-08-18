@@ -1,6 +1,6 @@
 {
     "name": "accessctrl",
-    "version": "0.0.2",
+    "version": "0.0.3",
     "description": "AccessCtrl library to generate configuration for the access control list and verify the incoming request is complies with that or not",
     "homepage": "",
     "author": {
@@ -17,14 +17,10 @@
     "repository": "/protect-config",
     "license": "Apache-2.0",
     "dependencies": {
-        "aws-sdk": "^2.665.0",
         "buffer": "^4.9.2",
-        "change-case": "^4.1.2",
         "express": "^4.18.1",
         "fs": "0.0.1-security",
         "lodash": "^4.17.21",
-        "map-files": "^0.8.2",
-        "path": "^0.12.7",
-        "save": "^2.5.0"
+        "map-files": "^0.8.2"
     }
 }

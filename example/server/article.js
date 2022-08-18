@@ -9,10 +9,7 @@ class ArticleApiController {
 	 * @apiPermission admin,moderator
 	 */
 	createArticle(req, res, next) {
-		// 1. Insert the new article into db
-		const newDbArticle = this.articleDbDriver.insert(req.body);
-		// 2. Respond with the new article
-		res.status(201).send(newDbArticle);
+		res.status(201).send({});
 	}
 
 	/**
@@ -22,10 +19,7 @@ class ArticleApiController {
 	 * @apiGroup Article
 	 */
 	updateArticle(req, res, next) {
-		// 1. Update the article in the db
-		const updatedDbArticle = this.articleDbDriver.updateById(req.params.id, req.body);
-		// 2. Respond with the new article
-		res.status(200).send(updatedDbArticle);
+		res.status(200).send({});
 	}
 
 	/**
@@ -36,10 +30,7 @@ class ArticleApiController {
 	 * @apiPermission admin,moderator,user
 	 */
 	getArticle(req, res, next) {
-		// 1. Insert the user into db
-		const dbArticle = this.articleDbDriver.getById(req.params.id);
-		// 2. Respond with the article
-		res.status(200).send(dbArticle);
+		res.status(200).send({});
 	}
 
 	/**
@@ -50,9 +41,6 @@ class ArticleApiController {
 	 * @apiPermission admin,moderator
 	 */
 	deleteArticle(req, res, next) {
-		// 1. Delete the article by its id
-		this.articleDbDriver.deleteById(req.params.id);
-		// 2. Respond with true
 		res.status(200).send(true);
 	}
 }
