@@ -1,6 +1,6 @@
 {
     "name": "accessctrl",
-    "version": "0.0.3",
+    "version": "0.0.8",
     "description": "AccessCtrl library to generate configuration for the access control list and verify the incoming request is complies with that or not",
     "homepage": "",
     "author": {
@@ -15,9 +15,10 @@
         ""
     ],
     "repository": "/protect-config",
-    "license": "Apache-2.0",
+    "license": "MIT License",
     "dependencies": {
         "buffer": "^4.9.2",
+        "comment-parser": "^1.3.1",
         "express": "^4.18.1",
         "fs": "0.0.1-security",
         "lodash": "^4.17.21",
