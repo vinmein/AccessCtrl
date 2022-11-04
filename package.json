@@ -14,7 +14,7 @@
     "keywords": [
         ""
     ],
-    "repository": "/protect-config",
+    "repository": "/AccessCtrl",
     "license": "MIT License",
     "dependencies": {
         "buffer": "^4.9.2",
