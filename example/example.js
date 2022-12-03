@@ -15,7 +15,8 @@ const rank = [
   ];
   
 const list = accessCtrl.generateACL({
-	source: "server/**/*.js"
+	source: "server/**/*.js",
+  ["user", "moderator", "admin"]
 });
 accessCtrl.initAcl(rank, aclConfig)
 const status = accessCtrl.verifyPermission(["user"], '/api/i/article"', "POST");

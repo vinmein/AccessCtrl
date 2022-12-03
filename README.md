@@ -1,6 +1,6 @@
 
 # AccessCtrl
-AccessCtrl library to generate common configuration based on the API resource comments to secure api access and also povide medthod to verify that incoming request has the permission to access the resource or not.
+AccessCtrl library to generate standard configuration based on the API resource comments to secure API access and also provide a method to verify that incoming request has the permission to access the resource or not.
 
 
 

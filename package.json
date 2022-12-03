@@ -1,20 +1,23 @@
 {
     "name": "accessctrl",
-    "version": "0.0.8",
-    "description": "AccessCtrl library to generate configuration for the access control list and verify the incoming request is complies with that or not",
+    "version": "0.1.0",
+    "description": "AccessCtrl library to generate standard configuration based on the API resource comments to secure API access and also provide a method to verify that incoming request has the permission to access the resource or not.",
     "homepage": "",
     "author": {
-        "name": "Dinesh Vadivel",
-        "email": "dinesh.drad@gmail.com"
+        "name": "Dinesh Vadivel"
     },
     "files": [
         "lib"
     ],
+    
     "main": "lib/index.js",
     "keywords": [
         ""
     ],
-    "repository": "/protect-config",
+    "repository": {
+		"type": "git",
+		"url": "https://github.com/vinmein/AccessCtrl.git"
+	},
     "license": "MIT License",
     "dependencies": {
         "buffer": "^4.9.2",
