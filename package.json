@@ -1,6 +1,6 @@
 {
     "name": "accessctrl",
-    "version": "0.1.0",
+    "version": "0.1.1",
     "description": "AccessCtrl library to generate standard configuration based on the API resource comments to secure API access and also provide a method to verify that incoming request has the permission to access the resource or not.",
     "homepage": "",
     "author": {
